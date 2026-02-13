@@ -354,16 +354,21 @@ class RecipeRAGSystem:
 
 def main():
     """主函数"""
-    try:
-        # 创建RAG系统
-        rag_system = RecipeRAGSystem()
+    # 创建RAG系统
+    rag_system = RecipeRAGSystem()
+    
+    # 运行交互式问答
+    rag_system.run_interactive()
+    # try:
+    #     # 创建RAG系统
+    #     rag_system = RecipeRAGSystem()
         
-        # 运行交互式问答
-        rag_system.run_interactive()
+    #     # 运行交互式问答
+    #     rag_system.run_interactive()
         
-    except Exception as e:
-        logger.error(f"系统运行出错: {e}")
-        print(f"系统错误: {e}")
+    # except Exception as e:
+    #     logger.error(f"系统运行出错: {e}")
+    #     print(f"系统错误: {e}")
 
 if __name__ == "__main__":
     main()
