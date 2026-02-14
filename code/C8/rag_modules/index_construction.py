@@ -25,7 +25,6 @@ class IndexConstructionModule:
         """
         self.model_name = model_name
         self.index_save_path = index_save_path
-        self.embeddings = None
         self.vectorstore = None
         self.setup_embeddings()
     

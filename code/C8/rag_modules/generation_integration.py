@@ -29,7 +29,6 @@ class GenerationIntegrationModule:
         self.model_name = model_name
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.llm = None
         self.setup_llm()
     
     def setup_llm(self):

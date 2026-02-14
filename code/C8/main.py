@@ -41,10 +41,6 @@ class RecipeRAGSystem:
             config: RAG系统配置，默认使用DEFAULT_CONFIG
         """
         self.config = config or DEFAULT_CONFIG
-        self.data_module = None
-        self.index_module = None
-        self.retrieval_module = None
-        self.generation_module = None
 
         # 检查数据路径
         if not Path(self.config.data_path).exists():
